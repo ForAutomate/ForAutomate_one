@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* will import the fonts */
+@font-face {
+    font-family:"popr";
+    src: url(./assets/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family:"popb";
+    src: url(./assets/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family:"popbb";
+    src: url(./assets/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+    font-family:"popsb";
+    src: url(./assets/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family:"popl";
+    src: url(./assets/Poppins/Poppins-Light.ttf);
+}
+
+
+html {
+  scroll-behavior: auto;
+}
+
+::selection{
+  color:rgb(207, 36, 199);
+}
+
+@layer components {
+  .primary-btn {
+    @apply bg-[#742775] hover:bg-transparent hover:text-black border-[#742775] border-2 px-6 py-4 rounded-full duration-300 font-popl text-white;
+  }
+}
