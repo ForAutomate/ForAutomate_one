@@ -5,7 +5,7 @@ import femaleTeam from '../../assets/female_team-2.svg';
 import maleTeam from '../../assets/male_team-2.svg';
 import dhruv from '../../assets/dhruv.svg';
 import harsh from '../../assets/harsh.svg';
-import raghvender from '../../assets/raghvender.svg';
+import raghvender from '../../assets/Raghvender.svg';
 
 
 const OurTeamPage = () => {
