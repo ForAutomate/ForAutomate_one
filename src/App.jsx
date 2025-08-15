@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
@@ -31,11 +31,26 @@ const Services = () => (
 );
 
 const App = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Adjust breakpoint as needed
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <AppLoader>
       <main className="overflow-x-hidden font-popr bg-[#FFFCF9]">
         <ScrollToTop />
-        <CustomCursor />
+        {!isMobile && <CustomCursor />} {/* Conditionally render CustomCursor */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

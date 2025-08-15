@@ -13,12 +13,12 @@ import bgImage7 from '../../assets/image 7.svg';
 import ProcessShowcase from './ProcessShowcase';
 import PricingPage from './PricingPage';
 
-import ServicesAPPSVideo from '../../assets/Services_APPS.mp4';
-import ServicesAUTOVideo from '../../assets/Services_AUTO.mp4';
-import ServicesCOVideo from '../../assets/Services_CO.mp4';
-import ServicesBIVideo from '../../assets/Services_BI.mp4';
-import ServicesWEBVideo from '../../assets/Services_WEB.mp4';
-import ServicesSEOVideo from '../../assets/Services_SEO.mp4';
+import ServicesAPPSVideo from '../../assets/Services_APPS.webm';
+import ServicesAUTOVideo from '../../assets/Services_AUTO.webm';
+import ServicesCOVideo from '../../assets/Services_CO.webm';
+import ServicesBIVideo from '../../assets/Services_BI.webm';
+import ServicesWEBVideo from '../../assets/Services_WEB.webm';
+import ServicesSEOVideo from '../../assets/Services_SEO.webm';
 
 // Video Player Component with lazy loading and viewport detection
 const VideoPlayer = ({ service }) => {
