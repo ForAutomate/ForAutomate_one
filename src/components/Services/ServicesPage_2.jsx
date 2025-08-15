@@ -13,6 +13,13 @@ import bgImage7 from '../../assets/image 7.svg';
 import ProcessShowcase from './ProcessShowcase';
 import PricingPage from './PricingPage';
 
+import ServicesAPPSVideo from '../../assets/Services_APPS.mp4';
+import ServicesAUTOVideo from '../../assets/Services_AUTO.mp4';
+import ServicesCOVideo from '../../assets/Services_CO.mp4';
+import ServicesBIVideo from '../../assets/Services_BI.mp4';
+import ServicesWEBVideo from '../../assets/Services_WEB.mp4';
+import ServicesSEOVideo from '../../assets/Services_SEO.mp4';
+
 // Video Player Component with lazy loading and viewport detection
 const VideoPlayer = ({ service }) => {
   const videoRef = useRef(null);
@@ -54,7 +61,7 @@ const ServicesPage_2 = () => {
       id: "power-apps",
       title: "Custom Power Apps Development",
       description: "We custom-build powerful mobile and web applications tailored to your unique business needs. From streamlining workflows and enhancing data collection to providing intuitive tools for your team, our Power Apps solutions are designed for maximum efficiency and productivity.",
-      video: "src/assets/Services_APPS.mp4",
+      video: ServicesAPPSVideo,
       logo: powerappsLogo,
       videoAlt: "Custom Power Apps development",
       priceNote: "Custom Quote (Based on Scope)",
@@ -66,7 +73,7 @@ const ServicesPage_2 = () => {
       id: "power-automate",
       title: "Intelligent Automation with Power Automate & RPA",
       description: "Eliminate repetitive, manual tasks and connect disparate systems seamlessly. We design intelligent workflows using Power Automate and Robotic Process Automation (RPA) that save significant time, reduce human errors, and accelerate your critical business operations, freeing your team for strategic work.",
-      video: "src/assets/Services_AUTO.mp4",
+      video: ServicesAUTOVideo,
       logo: powerautomateLogo,
       videoAlt: "Power Automate and RPA solutions",
       priceNote: "Project-Based Pricing",
@@ -78,7 +85,7 @@ const ServicesPage_2 = () => {
       id: "ai-copilot",
       title: "AI-Powered Solutions & Copilot Integration",
       description: "Infuse cutting-edge Artificial Intelligence into your operations. We integrate Copilot to boost individual and team productivity, and develop intelligent AI chatbots for instant support and information. This transforms how you interact with data and customers, providing smart, data-driven assistance.",
-      video: "src/assets/Services_CO.mp4",
+      video: ServicesCOVideo,
       logo: copilotLogo,
       videoAlt: "AI and Copilot integration",
       priceNote: "Project-Based Pricing",
@@ -90,7 +97,7 @@ const ServicesPage_2 = () => {
       id: "power-bi",
       title: "Actionable Insights with Power BI",
       description: "Transform your raw business data into clear, actionable insights. We design powerful, interactive dashboards and reports using Power BI that empower you to monitor performance, identify key trends, and make confident, data-driven decisions that propel your business forward.",
-      video: "src/assets/Services_BI.mp4",
+      video: ServicesBIVideo,
       logo: powerbiLogo,
       videoAlt: "Power BI data visualization",
       priceNote: "Custom Dashboard Packages",
@@ -102,7 +109,7 @@ const ServicesPage_2 = () => {
       id: "web-development",
       title: "Professional Website Development",
       description: "Your online presence starts here. We design and build modern, responsive, and engaging websites tailored to your brand's identity and goals. From compelling user interfaces to robust backend functionality, we create platforms that effectively showcase your services and connect you with your audience.",
-      video: "src/assets/Services_WEB.mp4",
+      video: ServicesWEBVideo,
       logo: reactLogo,
       videoAlt: "Professional website development",
       priceNote: "Starting from ₹15,000",
@@ -114,7 +121,7 @@ const ServicesPage_2 = () => {
       id: "seo",
       title: "Strategic SEO Services",
       description: "Boost your online visibility and attract more qualified customers. Our comprehensive SEO services optimize your website content, technical structure, and off-page factors to achieve higher rankings in search engine results, driving organic traffic and generating valuable leads for your business.",
-      video: "src/assets/Services_SEO.mp4",
+      video: ServicesSEOVideo,
       logo: seoLogo,
       videoAlt: "Search Engine Optimization services",
       priceNote: "Monthly Retainer / Project-based",

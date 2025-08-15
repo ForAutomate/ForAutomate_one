@@ -1,57 +1,65 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { User, Wifi, Puzzle, Star, Shield, Zap } from "lucide-react";
+import powerappsLogo from '../../assets/powerapps_logo.svg';
+import automateLogo from '../../assets/automate_logo.svg';
+import copilotLogo from '../../assets/copilot_logo.svg';
+import powerbiLogo from '../../assets/powerbi_logo.svg';
+import reactLogo from '../../assets/react_logo.svg';
+import seoLogo from '../../assets/seo_logo.png';
+import cardImg2 from '../../assets/card_img_2.svg';
+import image4 from '../../assets/image 4.svg';
+
 
 // Sample data - replace with your actual data
 const cardsData = [
   {
     id: 1,
-    icon: "src/assets/powerapps_logo.svg",
+    icon: powerappsLogo,
     title: "Power Apps",
     description: "We custom-build powerful mobile and web applications using Power Apps. These tailored solutions streamline your business processes, enhance data collection, and provide intuitive tools designed precisely for your team's needs, improving efficiency.",
     color: "from-purple-500 to-pink-600",
-    bgImage: "src/assets/card_img_2.svg"
+    bgImage: cardImg2
   },
   {
     id: 2,
-    icon: "src/assets/automate_logo.svg",
+    icon: automateLogo,
     title: "Power Automate",
     description: "Automate your repetitive tasks and integrate disparate systems seamlessly with Power Automate. We design intelligent workflows that save significant time, reduce manual errors, and accelerate your business operations, freeing up your team.",
     color: "from-blue-600 to-blue-400",
-    bgImage: "src/assets/card_img_2.svg"
+    bgImage: cardImg2
   },
   {
     id: 3,
-    icon: "src/assets/copilot_logo.svg",
+    icon: copilotLogo,
     title: "Chatbot/AI",
     description: "Leverage cutting-edge AI. We integrate Copilot to boost productivity and develop intelligent chatbots for instant support and information. This transforms how you interact with data and customers, providing smart assistance.",
     color: "from-teal-500 to-pink-400",
-    bgImage: "src/assets/card_img_2.svg"
+    bgImage: cardImg2
   },
   {
     id: 4,
-    icon: "src/assets/powerbi_logo.svg",
+    icon: powerbiLogo,
     title: "Power Bi",
     description: "Transform your raw data into clear, actionable insights with Power BI. We design interactive dashboards and reports that empower you to monitor performance, identify trends, and make data-driven decisions with confidence.",
     color: "from-yellow-400 to-amber-500",
-    bgImage: "src/assets/card_img_2.svg"
+    bgImage: cardImg2
   },
   {
     id: 5,
-    icon: "src/assets/react_logo.svg",
+    icon: reactLogo,
     title: "Website",
     description: "We create professional, responsive, and engaging websites tailored to your brand. From design to deployment, we build user-friendly platforms that effectively showcase your services and connect you with your audience.",
     color: "from-teal-300 to-blue-600",
-    bgImage: "src/assets/card_img_2.svg"
+    bgImage: cardImg2
   },
   {
     id: 6,
-    icon: "src/assets/seo_logo.png",
+    icon: seoLogo,
     title: "Seo",
     description: "Boost your online visibility and attract more customers. Our SEO services optimize your website content and technical aspects to rank higher in search engine results, driving organic traffic and leads.",
     color: "from-orange-500 to-yellow-400",
-    bgImage: "src/assets/card_img_2.svg"
+    bgImage: cardImg2
   }
 ];
 
@@ -247,14 +255,14 @@ const Cards = () => {
       {/* Background Design */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img 
-          src="src\assets\image 4.svg" 
+          src={image4} 
           alt="design" 
           className="absolute left-0 top-0 w-72 h-auto object-cover contrast-125"
         />
       </div>
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img 
-          src="src\assets\image 4.svg" 
+          src={image4} 
           alt="design" 
           className="absolute right-0 bottom-0 w-72 h-auto object-cover rotate-180 contrast-125"
         />

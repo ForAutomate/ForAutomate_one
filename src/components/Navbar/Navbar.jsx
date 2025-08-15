@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoMenuSharp } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import LogoDark from '../../assets/Logo_dark.svg';
 
 const menuItems = [
   { label: "Home", href: "/" },
@@ -37,7 +38,7 @@ function Navbar() {
       <div className={`h-20 xl:h-32 w-full fixed z-50 xl:px-20 xl:py-10 px-6 flex items-center justify-between text-xl font-popl xl:mt-10 transition-transform duration-300 ease-in-out ${
           isVisible ? 'translate-y-0' : '-translate-y-96'
         }`}>
-        <img src="src/assets/Logo_dark.svg" alt="logo" className="xl:w-72 w-44 xl:-mt-10" />
+        <img src={LogoDark} alt="logo" className="xl:w-72 w-44 xl:-mt-10" />
         
         <div className="hidden xl:flex items-center gap-8">
           {/* Navigation Items Container */}

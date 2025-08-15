@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="relative">
       {/* Background Images */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
-        <img src="src\assets\image 6.svg" alt="" className="absolute -top-2 -right-2 w-[80%] h-auto opacity-90 z-1 contrast-125 rotate-180" />
+        <img src="../../assets/image 6.svg" alt="" className="absolute -top-2 -right-2 w-[80%] h-auto opacity-90 z-1 contrast-125 rotate-180" />
       </div>
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[700px] md:min-h-[600px] xl:mb-4 relative z-10">

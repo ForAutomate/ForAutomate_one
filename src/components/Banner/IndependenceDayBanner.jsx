@@ -17,7 +17,7 @@ const IndependenceDayBanner = () => {
           className="absolute -top-2 -right-2 w-[80%] h-auto opacity-90 z-1 contrast-125 rotate-180"
         /> */}
         <img
-          src="src\assets\independence_day_bg.png"
+          src="../../assets/independence_day_bg.png"
           alt=""
           className="absolute top-20 right-44 w-[80%] h-auto xl:opacity-20 opacity-0 z-1"
         />
