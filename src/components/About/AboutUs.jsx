@@ -8,6 +8,9 @@ import bgImage8 from '../../assets/image 8.svg';
 import bgImage6 from '../../assets/image 6.png';
 import footerBg from '../../assets/footer_bg.png'; 
 import founderimg from '../../assets/founder.svg';
+import OurTeamPage from './OurTeamPage';
+import CertificationsPage from './CertificationsPage';
+
 
 
 // --- Framer Motion Animation Variants (Adjusted for faster triggers/animations) ---
@@ -175,7 +178,7 @@ export default function AboutUs() {
       <img 
         src={bgImage14} 
         alt="" 
-        className="absolute top-[3280px] right-0 w-0 xl:w-72 opacity-100 select-none pointer-events-none  z-0" // Added image
+        className="absolute top-[2880px] right-0 w-0 xl:w-72 opacity-100 select-none pointer-events-none  z-0" // Added image
       />
       <img 
         src={bgImage4} 
@@ -191,6 +194,16 @@ export default function AboutUs() {
         src={bgImage4} 
         alt="" 
         className="absolute top-[5520px] left-0 w-0 xl:w-56 opacity-100 select-none pointer-events-none  z-0" // Added image
+      />
+      <img 
+        src={bgImage14} 
+        alt="" 
+        className="absolute top-[6520px] right-0 w-0 xl:w-56 opacity-100 select-none pointer-events-none  z-0" // Added image
+      />
+      <img 
+        src={bgImage14} 
+        alt="" 
+        className="absolute top-[7720px] left-0 w-0 xl:w-56 rotate-180 opacity-100 select-none pointer-events-none  z-0" // Added image
       />
        
       </div>
@@ -262,7 +275,7 @@ export default function AboutUs() {
             <div className="bg-gradient-to-b from-[#742775] to-fuchsia-700 rounded-2xl p-8 text-white shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <Target className="w-12 h-12 mb-4 text-blue-200" />
-                <h3 className="text-2xl font-bold mb-4 ">Our Vision</h3>
+                <h3 className="text-2xl font-popsb mb-4 ">Our Vision</h3>
                 <p className="text-blue-50">
                   To be the leading catalyst for digital transformation, enabling businesses to thrive
                   in an automated, efficient, and data-driven future. We aim to be your trusted partner in unlocking the full potential of Microsoft Power Platform.
@@ -287,7 +300,7 @@ export default function AboutUs() {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl xl:text-6xl font-bold text-gray-900 mb-4"
+              className="text-4xl xl:text-6xl font-popsb text-gray-900 mb-4"
             >
               Meet Our Founder
             </motion.h2>
@@ -308,7 +321,7 @@ export default function AboutUs() {
                   </div>
                 </div>
                 <div className="md:w-2/3 p-8 md:p-12">
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Achyutananda Das</h3>
+                  <h3 className="text-3xl font-popsb text-gray-900 mb-2">Achyutananda Das</h3>
                   <p className="text-xl text-[#742775] font-semibold mb-6">Founder & CEO</p>
 
                   <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -358,7 +371,7 @@ export default function AboutUs() {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl xl:text-6xl font-bold text-gray-900 mb-4"
+              className="text-4xl xl:text-6xl font-popsb text-gray-900 mb-4"
             >
               Our Core Values
             </motion.h2>
@@ -378,7 +391,7 @@ export default function AboutUs() {
                   <div className="mb-6 group-hover:scale-110 transition-transform duration-300 text-[#742775]">
                     {value.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
+                  <h3 className="text-xl font-popsb text-gray-900 mb-4">{value.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{value.description}</p>
                 </div>
               </motion.div>
@@ -386,6 +399,12 @@ export default function AboutUs() {
           </motion.div>
         </motion.div>
       </section>
+
+      {/* Our team */}
+      <OurTeamPage/>
+
+      {/* certifications */}
+      <CertificationsPage/>
 
       {/* Our Expertise */}
       <section className="py-20">
@@ -401,7 +420,7 @@ export default function AboutUs() {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl xl:text-6xl font-bold text-gray-900 mb-4"
+              className="text-4xl xl:text-6xl font-popsb text-gray-900 mb-4"
             >
               Our Core Expertise
             </motion.h2>
@@ -443,7 +462,7 @@ export default function AboutUs() {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl xl:text-6xl font-bold mb-4"
+              className="text-4xl xl:text-6xl font-popsb mb-4"
             >
               Why Choose ForAutomate?
             </motion.h2>
@@ -463,7 +482,7 @@ export default function AboutUs() {
                   <div className="flex items-start space-x-4">
                     <ArrowRight className="w-6 h-6 text-[#742775] mt-1 group-hover:translate-x-2 transition-transform duration-300" />
                     <div>
-                      <h3 className="text-xl text-[#742775] font-bold mb-3">{reason.title}</h3>
+                      <h3 className="text-xl text-[#742775] font-popsb mb-3">{reason.title}</h3>
                       <p className="text-gray-800 leading-relaxed">{reason.description}</p>
                     </div>
                   </div>
@@ -488,7 +507,7 @@ export default function AboutUs() {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl xl:text-6xl font-bold text-gray-900 mb-4"
+              className="text-4xl xl:text-6xl font-popsb text-gray-900 mb-4"
             >
               Frequently Asked Questions
             </motion.h2>
@@ -562,7 +581,7 @@ export default function AboutUs() {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="xl:text-7xl text-4xl font-bold text-gray-900 mb-6"
+              className="xl:text-7xl text-4xl font-popsb text-gray-900 mb-6"
             >
               Ready to Transform Your Business?
             </motion.h2>

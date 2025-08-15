@@ -35,7 +35,7 @@ const App = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Adjust breakpoint as needed
+      setIsMobile(window.innerWidth < 768); 
     };
 
     handleResize(); // Set initial value
@@ -50,7 +50,7 @@ const App = () => {
     <AppLoader>
       <main className="overflow-x-hidden font-popr bg-[#FFFCF9]">
         <ScrollToTop />
-        {!isMobile && <CustomCursor />} {/* Conditionally render CustomCursor */}
+        {!isMobile && <CustomCursor />} 
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
