@@ -6,7 +6,9 @@ import bgImage4 from '../../assets/image 4.svg';
 import bgImage14 from '../../assets/image 14.svg';
 import bgImage8 from '../../assets/image 8.svg';
 import bgImage6 from '../../assets/image 6.png';
-import footerBg from '../../assets/footer_bg.png'; // Added this import
+import footerBg from '../../assets/footer_bg.png'; 
+import founderimg from '../../assets/founder.svg';
+
 
 // --- Framer Motion Animation Variants (Adjusted for faster triggers/animations) ---
 
@@ -178,7 +180,7 @@ export default function AboutUs() {
       <img 
         src={bgImage4} 
         alt="" 
-        className="absolute top-[4140px] left-0 w-32 xl:w-64 md:w-44 opacity-100 select-none pointer-events-none  z-0" // Added image
+        className="absolute top-[4140px] left-0 w-0 xl:w-72 opacity-100 select-none pointer-events-none  z-0" // Added image
       />
       <img 
         src={bgImage4} 
@@ -301,7 +303,7 @@ export default function AboutUs() {
                   <div className="w-48 h-48 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                     <div className="w-40 h-40 bg-white/30 rounded-full flex items-center justify-center">
                       {/* You can replace this with an actual image or a different icon */}
-                      <img src = "src\assets\founder.svg" alt='Founder' className='h-40 w-40 rounded-full object-cover'/>
+                      <img src = {founderimg} alt='Founder' className='h-40 w-40 rounded-full object-cover'/>
                     </div>
                   </div>
                 </div>

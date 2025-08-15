@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Star, Quote } from 'lucide-react';
 import { motion } from "framer-motion";
+import powerappslogo from '../../assets/powerapps_logo.svg';
+import powerbiLogo from '../../assets/powerbi_logo.svg';
+import powerautomateLogo from '../../assets/automate_logo.svg'
+import copilotlogo from '../../assets/copilot_logo.svg';
 
 
 const Testimonial = () => {
@@ -212,9 +216,9 @@ const Testimonial = () => {
       <div className="text-center mt-16 px-6">
         <div className="inline-flex items-center gap-2 bg-white rounded-full px-6 py-3 shadow-lg">
           <div className="flex -space-x-2">
-            <img src="src\assets\powerapps_logo.svg" alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
-            <img src="src\assets\copilot_logo.svg" alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
-            <img src="src\assets\automate_logo.svg" alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src = {powerappslogo} alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src={copilotlogo} alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src={powerautomateLogo} alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
           </div>
           <span className="text-gray-700 font-medium ml-2" >
             5+ Projects Delivered

@@ -5,6 +5,7 @@ import { FaArrowDown } from "react-icons/fa6";
 import { slideUp } from "../../utility/animation";
 import IndependenceDayHeading from "./IndependenceDayHeading"; // Import the new component
 import CelebrationButton from "./CelebrationButton"; // Import the new component
+import Hero1Vid from "../../assets/Hero_1_vid.mp4";
 
 const IndependenceDayBanner = () => {
   return (
@@ -79,7 +80,7 @@ const IndependenceDayBanner = () => {
                 playsInline
                 className="w-full h-full object-cover rounded-2xl"
               >
-                <source src="/src/assets/Hero_1_vid.mp4" type="video/mp4" />
+                <source src={Hero1Vid} type="video/mp4" alt="Hero Video" />
                 Your browser does not support the video tag.
               </video>
             </motion.div>

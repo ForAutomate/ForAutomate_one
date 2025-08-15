@@ -6,7 +6,6 @@ const useLoadingState = (initialLoading = true) => {
   const [isLoading, setIsLoading] = useState(initialLoading);
 
   useEffect(() => {
-    // Simulating a network request that takes 2 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
@@ -25,7 +24,7 @@ const AppLoader = ({ children }) => {
       <AnimatePresence>
         {isLoading && (
           <motion.div
-            className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-purple-600 to-indigo-800"
+            className="fixed inset-0 z-[9999] flex items-center justify-center bg-black"
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
