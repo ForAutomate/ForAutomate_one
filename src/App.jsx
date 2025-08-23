@@ -17,7 +17,8 @@ import AppLoader from "./components/AppLoader";
 
 const Home = () => (
   <>
-    <IndependenceDayBanner />
+    {/* <IndependenceDayBanner /> */}
+    <Hero />
     <Hero2 />
     <Cards />
     <Testimonial />

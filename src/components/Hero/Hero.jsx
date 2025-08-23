@@ -1,51 +1,61 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaArrowDown } from "react-icons/fa6"
+import { FaArrowDown } from "react-icons/fa6";
 import { slideUp } from "../../utility/animation";
+import Hero1Vid from "../../assets/Hero_1_vid.webm";
+import Img6 from "../../assets/image 6.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <div className="relative">
       {/* Background Images */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
-        <img src="../../assets/image 6.svg" alt="" className="absolute -top-2 -right-2 w-[80%] h-auto opacity-90 z-1 contrast-125 rotate-180" />
+        <img
+          src={Img6}
+          alt=""
+          className="absolute -top-2 -right-2 w-[80%] h-auto opacity-90 z-1 contrast-125 rotate-180"
+        />
       </div>
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[700px] md:min-h-[600px] xl:mb-4 relative z-10">
           {/* Text content section */}
           <div className="space-y-5 flex flex-col justify-center items-center text-center md:text-left py-20 px-10 md:pl-0 md:py-14 md:px-20 xl:-ml-48 md:items-start xl:mt-44">
-          <motion.h1
+            <motion.h1
               variants={slideUp(0.2)}
               initial="initial"
               animate="animate"
               className="text-4xl md:text-4xl xl:text-8xl font-popb"
             >
               Transform Your Business with{" "}
-              <span className="text-[#742775] font-popr">Custom Power Platform Solutions</span>
+              <span className="text-[#742775] font-popr">
+                Custom Power Platform Solutions
+              </span>
             </motion.h1>
             <motion.p
-          variants={slideUp(0.5)}
+              variants={slideUp(0.5)}
               initial="initial"
               animate="animate"
               className="text-sm xl:text-lg"
             >
-              Empowering Efficiency with 
-              Power Apps, Automate, and 
-              Pages Development.{" "}
+              Empowering Efficiency with Power Apps, Automate, and Pages
+              Development.{" "}
             </motion.p>
+            <Link to="/aboutus">
             <motion.button
-          variants={slideUp(0.8)}
+              variants={slideUp(0.8)}
               initial="initial"
               animate="animate"
               className="bg-[#742775] hover:bg-transparent hover:text-black border-[#742775] border-2 px-6 py-4 rounded-full duration-300 font-popl text-white"
             >
               Know More
             </motion.button>
+            </Link>
           </div>
           {/* Hero Video section */}
           <div className="flex justify-center items-center xl:-mr-52 xl:mt-20">
             <motion.div
-          initial={{
+              initial={{
                 opacity: 0,
                 x: 100,
               }}
@@ -60,7 +70,7 @@ const Hero = () => {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source src="/src/assets/Hero_1_vid.mp4" type="video/mp4" />
+                <source src={Hero1Vid} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </motion.div>
